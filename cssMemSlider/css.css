@@ -1,14 +1,12 @@
 *{
-    /* background-color: aqua; */
      box-sizing: border-box;
  }
-
+body{
+   background-color: rgb(220, 173, 173);  
+}
  .conteiner{
     width: 100%;
-    height: 100vh;
-/* 
-     height:52rem; */
-     background-color: rgb(220, 173, 173);
+    height: 100%;
      padding: 3rem;
  }
 
@@ -52,7 +50,7 @@
 
      max-width: 29rem;
      display: flex;
-   /* margin-left: 5rem; */
+   margin-left: 5rem;
  }
 
  .text{
@@ -64,35 +62,42 @@
      text-align: justify;
  
  }
- .text::after{
-    font-size: 1.8rem;
-    width: 30rem; 
- }
  .controls {
-     width: 6.5rem;
-     height: 5rem;
+     width: 10rem;
+     height: 6rem;
      display: flex;
      align-items: center;
+     justify-content: space-between;
+     margin-right: 5rem;
  }
+ .around_bar{
+    height: 2.1rem;
+    width: 2.1rem;
+   
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
  .bar{
-    height: 1rem;
-    width: 1rem;
-    margin: 0.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
     cursor: pointer;
     background-color: rgb(39, 101, 207);
     border-radius: 50%;
     transition: all .4s ease;
+    display: block;
 }
-.bar:focus{
+.around_bar:focus .bar{
     background-color: rgb(181, 207, 225);
     border: 1px solid rgb(39, 101, 207);
 }
 
-.bar:hover{
+.around_bar:hover .bar{
    
   background-color: rgb(235, 75, 75);
 }
-.bar:focus:hover{
+.around_bar:focus:hover .bar{
     background-color: rgb(236, 159, 159);
     border: 1px solid aliceblue;
 }
@@ -131,18 +136,25 @@
       height: 50%;
 
   }
-.controls{
-    height: 5rem; 
+  .controls{
+    margin-right: 0;
+  }
+.around_bar{
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0.2rem;
+}
+.bar{
+    height: 0.8rem;
+    width: 0.8rem;
 }
 .slider_text{
     justify-content: space-between;
+   
 }
-/* .controls{
-    width: 7rem;
-    height: 7rem;
-} */
 .slide_text{
     max-width: 24rem;
+    margin-left: 0;
 }
 #r1:checked ~ .slider_text .slide_text .t1{
     font-size: 1.3rem;
@@ -162,16 +174,16 @@
  }
  .controls{
    height: 4rem;
+   width: 7rem;
 }  
  }
  @media (max-width:550px){
      .slider_text{
          flex-direction: column-reverse;
          align-items: center;
-  height: 8rem;
+         height: 9rem;
         }
  
-
         #r1:checked ~ .slider_text .slide_text .t1{
             font-size: 1rem;
              width: 8rem; 
