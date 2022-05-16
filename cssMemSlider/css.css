@@ -186,27 +186,12 @@ body{
      .slider_text{
          flex-direction: column-reverse;
          align-items: center;
-         height: 9rem;
+         height: 11rem;
         }
-/*  
         #r1:checked ~ .slider_text .slide_text .t1{
-            font-size: 1rem;
-             width: 8rem; 
-         }
-         #r2:checked ~ .slider_text .slide_text .t2{
-            font-size: 1rem;
-            width: 16rem; 
-            text-align: center;
-         }
-         #r3:checked ~ .slider_text .slide_text .t3{
-            font-size: 1rem;
-             width: 16rem; 
-             text-align: center; 
-         }
-         #r4:checked ~ .slider_text .slide_text .t4{
-            font-size: 1rem;
-             width: 16rem;  
+            font-size: 1.3rem;
+             width: 20rem;
              text-align: center;
-         } */
+         }
 
 }
